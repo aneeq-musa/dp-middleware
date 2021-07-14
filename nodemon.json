@@ -1,0 +1,6 @@
+{
+    "watch": ["express", ".env"],
+    "ext": "ts",
+    "ignore": ["express/**/*.spec.ts"],
+    "exec": "ts-node ./express/server.ts"
+  }

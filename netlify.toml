@@ -1,3 +1,14 @@
 [build]
-  functions = "functions"
+  functions = "express"
+  command = "npm run-script build"
+
+[dev]
+  command = "npm run dev"
+  port = 8888
+  targetPort = 5000
+  autoLaunch = true
+  framework = "#custom"
+  [dev.https]
+    certFile = "./certs/localhost.crt"
+    keyFile = "./certs/localhost.key"
 
